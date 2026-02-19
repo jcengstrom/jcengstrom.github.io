@@ -1,0 +1,38 @@
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: flex-start; 
+  padding: 24px 0;          
+}
+
+.outer-main-container {
+  width: 60%;
+  margin: 40px auto;
+  padding: 14px;
+  background-color: #ffff00;
+  box-shadow: 8px 8px 0 #888;
+  outline: 2px solid black;
+}
+
+.inner-main-container {
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 12px;
+  outline: 1px solid black;      
+}
+
+.bio-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 12px 0;
+  border: 2px solid black;
+}
+
+.inner-main-container p {
+  margin: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
