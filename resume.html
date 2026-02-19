@@ -25,7 +25,9 @@
         </div>
 
         <div class="dark-mode-container">
-
+            <button id="darkToggle" class="dark-toggle" type="button">
+                <img id="darkSVG" src="images/night-mode-svgrepo-com.svg" alt="" style="width:75px;height:66px;"/>
+            </button>
         </div>
     </div>
     </header-outer>
@@ -57,5 +59,10 @@
         </div>
         </div>
     </footer>
+<script>
+  document.getElementById("darkToggle").onclick = function () {
+    document.body.classList.toggle("dark");
+  };
+</script>
 </body>
 </html>

@@ -85,8 +85,18 @@ body {
 }
 
 .dark-mode-container {
-    display: flex;
-    justify-self: end;
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  background: inherit;
+  margin-right: 10px;
+}
+
+.dark-toggle{
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .footer-outer {
@@ -196,4 +206,69 @@ body {
   .header-logo img {
     top: 0;             
   }
+}
+
+/* dark mode CSS included here in globals for all files, even those with unique class names as originally planned
+   to use different layouts across pages (hence, different CSS files for each html) but ultimtely picked one unified
+   layout utilizing the sme classes. */
+
+/* transitions for dakr mode */
+body, .header-container, .footer-container, .outer-main-container, .inner-main-container, a {
+  transition: background-color 0.2s ease, color 0.2s ease, outline-color 0.2s ease;
+}
+
+/* Dark mode colors */
+body.dark {
+  background: #000000;
+  color: #000000;
+}
+
+body.dark .header-container,
+body.dark .footer-container {
+  background: #2d2d2d;
+  color: #ffffff;
+}
+
+body.dark .header-outer,
+body.dark .footer-outer {
+  background-color: #000;
+}
+
+body.dark .bio-image {
+  border: none;
+}
+
+body.dark .inner-header-container {
+  color: white;
+}
+
+body.dark .main-header-container {
+  color: #ffffff;
+}
+
+body.dark .outer-main-container {
+  background-color: #000000;
+  box-shadow: 8px 8px 0 #444;
+}
+
+body.dark .inner-main-container {
+  background-color: #141414;
+  border-color: #ffffff;
+  outline-color: #ffffff;
+}
+
+body.dark .inner-main-container p {
+  color: white;
+}
+
+body.dark .header-links a {
+  background: #2d2d2d;
+  color: #ffffff;
+  outline-color: #2d2d2d;
+}
+
+body.dark .header-links a:hover {
+  background: #ff01d0;  
+  color: #000;
+  outline-color: #000;
 }
